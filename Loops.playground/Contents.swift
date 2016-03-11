@@ -2,6 +2,7 @@
 
 import UIKit
 
+/*
 var myFirstInt: Int = 0
 
 //for i in 1...5 {
@@ -65,4 +66,42 @@ while shields > 0 {
     ++blasterFireCount
     ++spaceDemonsDestroyed
 }
+
+var triangularNumber = 0;
+var n : Int
+//for (n = 1; n <= 200; ++n) {
+for n in 1..<201 {
+    triangularNumber += n
+}
+
+print("The 200th triangular number is \(triangularNumber)")
+
+// for ( init_expression; loop_condition; loop_expression ) 
+//{ 
+//  Program statement 
+//}
+
+// init_expression
+// while ( loop_condition ) 
+//{ 
+//  Program statement
+//  loop_expression
+//}
+
+
+var number : Int = 123
+var right_digit: Int
+
+while (number != 0) {
+    right_digit = number % 10
+    print(right_digit)
+    number /= 10
+}
+*/
+
+
+
+
+
+
 
