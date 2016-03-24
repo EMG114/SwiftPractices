@@ -9,10 +9,30 @@
 #import <Foundation/Foundation.h>
 #import "HexInt.h"
 
+- (NSArray *)getArrayFromHexInt:(UInt32)hexInt
+{
+    
+    CGFloat red = ((CGFloat) ((hexInt & 0xFF0000) >> 16)) / 255.0;
+    CGFloat green = ((CGFloat) ((hexInt & 0xFF00) >> 8)) / 255.0;
+    CGFloat blue = ((CGFloat) (hexInt & 0xFF)) / 255.0;
+    
+    red = round(red * 100) / 100;
+    green = round(green * 100) / 100;
+    blue = round(blue * 100) / 100;
+    
+    NSArray *colorArray = @[[NSNumber numberWithFloat:red],
+                            [NSNumber numberWithFloat:green],
+                            [NSNumber numberWithFloat:blue]];
+    
+    return colorArray;
+    
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        UInt32 hex = 0xFFFFFF;
+     
+
         
         
     }
